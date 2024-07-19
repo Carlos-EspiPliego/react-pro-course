@@ -1,9 +1,10 @@
-import { Navigation } from "./routes/Navigation"
+import { Suspense } from "react"
+import { Navigation } from "./navigation/Navigation"
 
 export const App = () => {
   return (
-    <div>
+    <Suspense fallback={<span>Cargando...</span>}>
       <Navigation />
-    </div>
+    </Suspense>
   )
 }
