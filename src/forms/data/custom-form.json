@@ -1,0 +1,110 @@
+[
+    {
+        "type": "text",
+        "label": "First Name",
+        "name": "firstName",
+        "placeholder": "Enter your first name",
+        "required": true,
+        "value": "",
+        "validations": [
+            {
+                "type": "minLength",
+                "value": 2
+            },
+            {
+                "type": "maxLength",
+                "value": 10
+            }
+        ]
+    },
+    {
+        "type": "text",
+        "label": "Last Name",
+        "name": "lastName",
+        "placeholder": "Enter your last name",
+        "required": true,
+        "value": "",
+        "validations": [
+            {
+                "type": "minLength",
+                "value": 2
+            },
+            {
+                "type": "maxLength",
+                "value": 10
+            }
+        ]
+    },
+    {
+        "type": "email",
+        "label": "Email",
+        "name": "email",
+        "placeholder": "Enter your email",
+        "required": true,
+        "value": "",
+        "validations": [
+            {
+                "type": "email"
+            }
+        ]
+    },
+    {
+        "type": "password",
+        "label": "Password",
+        "name": "password",
+        "placeholder": "Enter your password",
+        "required": true,
+        "value": "",
+        "validations": [
+            {
+                "type": "minLength",
+                "value": 6
+            },
+            {
+                "type": "maxLength",
+                "value": 20
+            }
+        ]
+    },
+    {
+        "type": "checkbox",
+        "label": "I agree to the terms and conditions",
+        "name": "terms",
+        "required": true,
+        "value": false,
+        "validations": [
+            {
+                "type": "requiredTrue"
+            }
+        ]
+    },
+    {
+        "type": "select",
+        "name": "favoriteGame",
+        "label": "Favorite Game",
+        "value": "",
+        "validations": [
+            {
+                "type": "required"
+            }
+        ],
+        "options": [
+            {
+                "label": "Select a game",
+                "value": ""
+            },
+            {
+                "label": "Chess",
+                "value": "chess"
+            },
+            {
+                "label": "Checkers",
+                "value": "checkers"
+            },
+            {
+                "label": "Go",
+                "value": "go"
+            }
+        ]
+    }
+]

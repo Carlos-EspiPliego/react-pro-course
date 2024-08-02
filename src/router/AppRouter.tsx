@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from "react-router-dom"
-import { RegisterPage, FormikBasicPage, FormikYupPage, FormikComponents, FormikAbstractation } from "../forms/pages";
+import { RegisterPage, FormikBasicPage, FormikYupPage, FormikComponents, FormikAbstractation, RegisterFormikPage, DynamicForm } from "../forms/pages";
 
 type JSXComponent = () => JSX.Element;
 
@@ -40,6 +40,18 @@ export const routes: Route[] = [
         path: 'formik-abstractation',
         Component: () => <FormikAbstractation />,
         name: 'Formik Abstractation Form'
+    },
+    {
+        to: '/register-formik-page',
+        path: 'register-formik-page',
+        Component: () => <RegisterFormikPage />,
+        name: 'Register Formik Page'
+    },
+    {
+        to: '/dinamic-form',
+        path: 'dinamic-form',
+        Component: () => <DynamicForm />,
+        name: 'Dynamic Form'
     },
 ]
 
